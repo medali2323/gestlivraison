@@ -253,9 +253,10 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(589, 144);
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(462, 129);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(94, 16);
+            this.label15.Size = new System.Drawing.Size(187, 29);
             this.label15.TabIndex = 3;
             this.label15.Text = "List Expediteur";
             // 
