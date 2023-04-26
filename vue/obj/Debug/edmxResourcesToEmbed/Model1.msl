@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="gestlivraisonModelStoreContainer" CdmEntityContainer="gestlivraisonEntities1">
+    <EntitySetMapping Name="colis">
+      <EntityTypeMapping TypeName="gestlivraisonModel.colis">
+        <MappingFragment StoreEntitySet="colis">
+          <ScalarProperty Name="codecolis" ColumnName="codecolis" />
+          <ScalarProperty Name="nomclt" ColumnName="nomclt" />
+          <ScalarProperty Name="gouvernemant" ColumnName="gouvernemant" />
+          <ScalarProperty Name="ville" ColumnName="ville" />
+          <ScalarProperty Name="adresseclt" ColumnName="adresseclt" />
+          <ScalarProperty Name="telclt" ColumnName="telclt" />
+          <ScalarProperty Name="telclt2" ColumnName="telclt2" />
+          <ScalarProperty Name="des" ColumnName="des" />
+          <ScalarProperty Name="prix" ColumnName="prix" />
+          <ScalarProperty Name="nbartticle" ColumnName="nbartticle" />
+          <ScalarProperty Name="commentaire" ColumnName="commentaire" />
+          <ScalarProperty Name="modepaiment" ColumnName="modepaiment" />
+          <ScalarProperty Name="Codeexpediteur" ColumnName="Codeexpediteur" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Depot">
+      <EntityTypeMapping TypeName="gestlivraisonModel.Depot">
+        <MappingFragment StoreEntitySet="Depot">
+          <ScalarProperty Name="iddepot" ColumnName="iddepot" />
+          <ScalarProperty Name="ville" ColumnName="ville" />
+          <ScalarProperty Name="adresse" ColumnName="adresse" />
+          <ScalarProperty Name="numtel" ColumnName="numtel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Etat">
+      <EntityTypeMapping TypeName="gestlivraisonModel.Etat">
+        <MappingFragment StoreEntitySet="Etat">
+          <ScalarProperty Name="Codeetat" ColumnName="Codeetat" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="etatcolis">
+      <EntityTypeMapping TypeName="gestlivraisonModel.etatcolis">
+        <MappingFragment StoreEntitySet="etatcolis">
+          <ScalarProperty Name="Codeetatcolis" ColumnName="Codeetatcolis" />
+          <ScalarProperty Name="Codecolis" ColumnName="Codecolis" />
+          <ScalarProperty Name="Codeetat" ColumnName="Codeetat" />
+          <ScalarProperty Name="Codelivreur" ColumnName="Codelivreur" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Commentaire" ColumnName="Commentaire" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="expediteur">
+      <EntityTypeMapping TypeName="gestlivraisonModel.expediteur">
+        <MappingFragment StoreEntitySet="expediteur">
+          <ScalarProperty Name="Codeexpediteur" ColumnName="Codeexpediteur" />
+          <ScalarProperty Name="Nomexpediteur" ColumnName="Nomexpediteur" />
+          <ScalarProperty Name="Numtelexpéditeur" ColumnName="Numtelexpéditeur" />
+          <ScalarProperty Name="gouvernemant" ColumnName="gouvernemant" />
+          <ScalarProperty Name="adresse" ColumnName="adresse" />
+          <ScalarProperty Name="viille" ColumnName="viille" />
+          <ScalarProperty Name="Codetva" ColumnName="Codetva" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Modepaiement" ColumnName="Modepaiement" />
+          <ScalarProperty Name="Fraislivraison" ColumnName="Fraislivraison" />
+          <ScalarProperty Name="Fraisretour" ColumnName="Fraisretour" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="livreur">
+      <EntityTypeMapping TypeName="gestlivraisonModel.livreur">
+        <MappingFragment StoreEntitySet="livreur">
+          <ScalarProperty Name="Codelivreur" ColumnName="Codelivreur" />
+          <ScalarProperty Name="Nomlivreur" ColumnName="Nomlivreur" />
+          <ScalarProperty Name="Numtel" ColumnName="Numtel" />
+          <ScalarProperty Name="Fraislivraison" ColumnName="Fraislivraison" />
+          <ScalarProperty Name="iddepot" ColumnName="iddepot" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RecetteExpediteur">
+      <EntityTypeMapping TypeName="gestlivraisonModel.RecetteExpediteur">
+        <MappingFragment StoreEntitySet="RecetteExpediteur">
+          <ScalarProperty Name="Coderecette" ColumnName="Coderecette" />
+          <ScalarProperty Name="datedeb" ColumnName="datedeb" />
+          <ScalarProperty Name="datefin" ColumnName="datefin" />
+          <ScalarProperty Name="montantexpediteur" ColumnName="montantexpediteur" />
+          <ScalarProperty Name="montantsosciete" ColumnName="montantsosciete" />
+          <ScalarProperty Name="nbclislivre" ColumnName="nbclislivre" />
+          <ScalarProperty Name="nbcolisretour" ColumnName="nbcolisretour" />
+          <ScalarProperty Name="Codeexpediteur" ColumnName="Codeexpediteur" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reclamation">
+      <EntityTypeMapping TypeName="gestlivraisonModel.Reclamation">
+        <MappingFragment StoreEntitySet="Reclamation">
+          <ScalarProperty Name="Codereclamation" ColumnName="Codereclamation" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Etat" ColumnName="Etat" />
+          <ScalarProperty Name="Commentaire" ColumnName="Commentaire" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Codecolis" ColumnName="Codecolis" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
